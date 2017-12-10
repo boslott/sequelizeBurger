@@ -1,0 +1,25 @@
+{
+  "name": "sequelizeburger",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/boslott/sequelizeBurger.git"
+  },
+  "author": "Bo Slott",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/boslott/sequelizeBurger/issues"
+  },
+  "homepage": "https://github.com/boslott/sequelizeBurger#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "mysql2": "^1.5.1",
+    "sequelize": "^4.27.0"
+  }
+}
