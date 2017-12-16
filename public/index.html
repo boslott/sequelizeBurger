@@ -52,11 +52,11 @@
 
 
                 <li><a href="#facts">Facts</a></li>
-                <li><a href="#food-menu">Create Your Burgers</a></li>
+                <li><a href="#create">Create Your Burgers</a></li>
                 <li><a href="#special-offser">Special Offers</a></li>
 
                 <!--fix for scroll spy active menu element-->
-                <li style="display:none;"><a href="#header"></a></li>
+                <li style="display:none;"><a href="#top"></a></li>
 
             </ul>
         </div><!--/.navbar-collapse -->
@@ -64,6 +64,7 @@
     </div><!-- menu -->
 
     <div id="header">
+      <a name="top"></a>
         <div class="bg-overlay"></div>
         <div class="center text-center">
             <div class="banner">
@@ -152,17 +153,17 @@
 
 
     <div id="food-menu" class="light-wrapper">
-        <section class="ss-style-top"></section>
+        <section class="ss-style-top"><a name="create"></a></section>
         <div class="container inner">
             <h2 class="section-title text-center">Create Your Burger To Devour</h2>
             <p class="lead main text-center">Use the form below to create and devour your very own burgers!</p>
 
 
-            <form class="create-form text-center">
+            <form class="create-form text-center" id="newBurgerForm" action="#">
               <div class="form-group ">
                 <label for="burgerName">Enter Your Burger:</label>
                 <input type="text" id="burgerName" name="name" />
-                <button class="btn btn-primary" type="button" id="addBtn">Add Your Burger</button>
+                <button class="btn btn-primary" type="submit" id="addBtn">Add Your Burger</button>
               </div>
             </form>
 

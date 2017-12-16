@@ -6,6 +6,19 @@ $(document).ready(function() {
   let undevBurgerContainer = $('.undevoured-burgers-container');
   let devBurgerContainer = $('.devoured-burgers-container');
 
+  // Create burger with enter key
+  $(document).on('keypress', event => {
+    if ($('#burgerName').val() !== '' && event.keyCode === 13) {
+      event.preventDefault();
+      handleNewBurger(event);
+    }
+    if ($('#burgerName').val() === '' && event.keyCode === 13) {
+      event.preventDefault();
+      console.log(event.keyCode + ' key has been pressed');
+    }
+    
+  });
+
   //  Handles fornm submission to create new burger
   function handleNewBurger(event) {
     if (!nameInput.val().trim().trim()) {
